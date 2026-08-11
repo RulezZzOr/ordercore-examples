@@ -70,6 +70,19 @@ Claude Desktop / Cursor config: [`mcp/`](mcp/)
    - **OpenAPI 3.1**: [`ordercore.ai/openapi.yaml`](https://ordercore.ai/openapi.yaml) — import into GPT Actions, Postman, or a codegen
    - **Ready-made tool schemas** for OpenAI / Claude / Gemini / DeepSeek / Grok: [`api.ordercore.ai/direct-ai/tooling`](https://api.ordercore.ai/direct-ai/tooling)
 
+## SDKs
+
+Official, dependency-free clients that make idempotency the default and retry
+safely. Each has a one-line **`sandbox()`** that issues a read-only key for you —
+no signup:
+
+| SDK | Install | First call, no signup |
+| --- | --- | --- |
+| [`sdk/js`](sdk/js) — Node 18+ | `npm i @ordercore/sdk` | `const oc = await OrderCore.sandbox();` |
+| [`sdk/python`](sdk/python) — Python 3.8+ | `pip install ordercore` | `oc = OrderCore.sandbox()` |
+
+Full read/write keys (for checkout) at [ordercore.ai/bootstrap](https://ordercore.ai/bootstrap).
+
 ## Why idempotency matters for agents
 
 Agents retry. Networks fail mid-checkout. Without idempotency, a retried
