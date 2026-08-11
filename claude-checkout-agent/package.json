@@ -1,0 +1,8 @@
+{
+  "name": "ordercore-claude-checkout-agent",
+  "private": true,
+  "type": "module",
+  "description": "Agentic loop giving Claude OrderCore commerce tools. Offline mock mode needs nothing; live mode needs @anthropic-ai/sdk.",
+  "scripts": { "start": "node run.mjs" },
+  "dependencies": { "@anthropic-ai/sdk": "^0.70.0" }
+}

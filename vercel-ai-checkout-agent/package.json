@@ -1,0 +1,11 @@
+{
+  "name": "ordercore-vercel-ai-checkout-agent",
+  "private": true,
+  "type": "module",
+  "description": "Vercel AI SDK agent with OrderCore commerce tools. Offline mode uses the SDK's own MockLanguageModelV3 — no API keys.",
+  "scripts": { "start": "node run.mjs" },
+  "dependencies": {
+    "ai": "^7.0.0",
+    "zod": "^4.0.0"
+  }
+}

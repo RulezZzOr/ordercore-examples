@@ -1,0 +1,15 @@
+{
+  "name": "ordercore-agent-commerce-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Give an AI agent a catalog + idempotent checkout in 5 minutes. Mock mode runs offline with no key.",
+  "keywords": ["ai-agent", "commerce", "checkout", "idempotent", "mcp", "ordercore"],
+  "license": "UNLICENSED",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node run.mjs",
+    "test": "node run.mjs",
+    "verify": "bash verify.sh",
+    "help": "node run.mjs --help"
+  }
+}

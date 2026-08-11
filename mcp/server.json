@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "ai.ordercore/ordercore-mcp",
+  "description": "Commerce backend for AI agents: catalog search, prices, inventory, order history, and idempotent checkout (retry-safe, never double-charges). 9 tools over a real orders API.",
+  "repository": {
+    "url": "https://github.com/RulezZzOr/ordercore-examples",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "0.2.29"
+  },
+  "packages": [
+    {
+      "registry_name": "direct",
+      "name": "ordercore-mcp",
+      "version": "0.2.29",
+      "runtime_hint": "binary",
+      "package_arguments": [],
+      "environment_variables": [
+        {
+          "name": "ORDERCORE_API_KEY",
+          "description": "OrderCore API key. Optional: omit for a zero-config read-only sandbox on the demo catalog; set a full read/write key (free, 2 fields, no payment) from https://ordercore.ai/bootstrap to enable checkout.",
+          "is_required": false,
+          "is_secret": true
+        },
+        {
+          "name": "ORDERCORE_BASE_URL",
+          "description": "API base URL (default https://api.ordercore.ai)",
+          "is_required": false,
+          "is_secret": false
+        }
+      ]
+    }
+  ],
+  "downloads": {
+    "darwin-arm64": "https://ordercore.ai/downloads/ordercore-mcp-darwin-arm64.zip",
+    "darwin-amd64": "https://ordercore.ai/downloads/ordercore-mcp-darwin-amd64.zip",
+    "linux-amd64": "https://ordercore.ai/downloads/ordercore-mcp-linux-amd64.zip",
+    "windows-amd64": "https://ordercore.ai/downloads/ordercore-mcp-windows-amd64.zip"
+  }
+}
