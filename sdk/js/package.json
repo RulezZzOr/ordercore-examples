@@ -1,7 +1,7 @@
 {
   "name": "@ordercore/sdk",
   "version": "0.1.0",
-  "description": "OrderCore SDK — commerce API for AI agents: catalog, idempotent orders, checkout sessions. Zero dependencies, Node 18+.",
+  "description": "OrderCore SDK \u2014 commerce API for AI agents: catalog, idempotent orders, checkout sessions. Zero dependencies, Node 18+.",
   "type": "module",
   "main": "index.mjs",
   "types": "index.d.ts",
@@ -11,18 +11,40 @@
       "import": "./index.mjs"
     }
   },
-  "files": ["index.mjs", "index.d.ts", "README.md"],
-  "engines": { "node": ">=18" },
+  "files": [
+    "index.mjs",
+    "index.d.ts",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "test": "node --test"
   },
   "keywords": [
-    "ordercore", "commerce", "checkout", "orders", "idempotency",
-    "ai-agents", "agentic-commerce", "mcp", "api-client"
+    "ordercore",
+    "commerce",
+    "checkout",
+    "orders",
+    "idempotency",
+    "ai-agents",
+    "agentic-commerce",
+    "mcp",
+    "api-client"
   ],
   "author": "Cloudpeakify s.r.o.",
   "license": "MIT",
   "homepage": "https://ordercore.ai",
-  "repository": { "type": "git", "url": "https://github.com/RulezZzOr/ordercore-examples.git", "directory": "sdk/js" },
-  "bugs": { "url": "https://ordercore.ai/support" }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RulezZzOr/ordercore-examples.git",
+    "directory": "sdk/js"
+  },
+  "bugs": {
+    "url": "https://ordercore.ai/support"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
