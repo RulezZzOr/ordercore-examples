@@ -1,0 +1,19 @@
+{
+  "name": "@ordercore/mcp",
+  "version": "0.2.17",
+  "description": "Zero-config MCP server for OrderCore — give an AI agent a commerce catalog + idempotent checkout. No signup: runs a read-only sandbox with no key.",
+  "type": "module",
+  "bin": { "ordercore-mcp": "bin/ordercore-mcp.mjs" },
+  "files": ["bin/", "README.md"],
+  "engines": { "node": ">=18" },
+  "keywords": [
+    "mcp", "model-context-protocol", "ordercore", "commerce", "checkout",
+    "orders", "ai-agents", "agentic-commerce", "claude", "openai"
+  ],
+  "author": "Cloudpeakify s.r.o.",
+  "license": "MIT",
+  "homepage": "https://ordercore.ai",
+  "repository": { "type": "git", "url": "https://github.com/RulezZzOr/ordercore-examples.git", "directory": "sdk/mcp" },
+  "bugs": { "url": "https://ordercore.ai/support" },
+  "publishConfig": { "access": "public" }
+}
