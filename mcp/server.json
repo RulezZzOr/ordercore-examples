@@ -7,13 +7,13 @@
     "source": "github"
   },
   "version_detail": {
-    "version": "0.2.29"
+    "version": "0.2.17"
   },
   "packages": [
     {
       "registry_name": "direct",
       "name": "ordercore-mcp",
-      "version": "0.2.29",
+      "version": "0.2.17",
       "runtime_hint": "binary",
       "package_arguments": [],
       "environment_variables": [
