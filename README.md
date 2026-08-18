@@ -79,7 +79,7 @@ no signup:
 | SDK | Install | First call, no signup |
 | --- | --- | --- |
 | [`sdk/js`](sdk/js) — Node 18+ | `npm i @ordercore/sdk` | `const oc = await OrderCore.sandbox();` |
-| [`sdk/python`](sdk/python) — Python 3.8+ | `pip install ordercore` | `oc = OrderCore.sandbox()` |
+| [`sdk/python`](sdk/python) — Python 3.8+ | copy `sdk/python/ordercore/` (stdlib only; PyPI package coming) | `oc = OrderCore.sandbox()` |
 
 Full read/write keys (for checkout) at [ordercore.ai/bootstrap](https://ordercore.ai/bootstrap).
 
