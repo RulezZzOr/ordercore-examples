@@ -4,8 +4,13 @@ Stdlib-only Python client for [OrderCore](https://ordercore.ai) — the commerce
 API for AI agents. Catalog, checkout sessions, and **idempotent orders**: agent
 retries never double-charge.
 
+> **Not on PyPI yet.** `pip install ordercore` does **not** work today.
+> Until the release lands, vendor the client directly — it is a single
+> stdlib-only module with zero dependencies (Python 3.8+):
+
 ```bash
-pip install ordercore   # Python 3.8+, zero dependencies
+# from the repo root
+cp -r sdk/python/ordercore /path/to/your/project/
 ```
 
 ### Try it with no signup
